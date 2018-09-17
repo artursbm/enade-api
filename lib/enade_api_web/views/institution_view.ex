@@ -11,7 +11,8 @@ defmodule EnadeAPIWeb.InstitutionView do
   end
 
   def render("institution.json", %{institution: institution}) do
-    %{id: institution.id,
+    %{
+      id: institution.id,
       name: institution.name,
       global_score: institution.global_score}
   end
